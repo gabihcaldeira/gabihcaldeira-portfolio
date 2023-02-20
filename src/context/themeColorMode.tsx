@@ -26,6 +26,7 @@ interface IColorModeContext {
       background: {
         main: string;
         nav: string;
+        card: string;
       };
       text: {
         main: string;
@@ -94,6 +95,10 @@ const ColorModeProvider = ({ children }: IColorModeProviderProps) => {
             ? "rgba(255, 255, 255, 0.9)"
             : "rgba(22, 22, 22, 0.9)",
         nav: mode === "light" ? "rgb(255, 255, 255)" : "rgb(22, 22, 22)",
+        card:
+          mode === "light"
+            ? "rgba(255, 255, 255, 0.7)"
+            : "rgba(22, 22, 22, 0.7)",
       },
       text: {
         main: mode === "light" ? "black" : "white",

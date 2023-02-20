@@ -9,7 +9,7 @@ function App() {
   return (
     <ColorModeProvider>
       <Global theme={theme} />
-      <ProjectCard />
+      <Home />
     </ColorModeProvider>
   );
 }
