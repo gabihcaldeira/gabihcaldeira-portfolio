@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import ProjectCard from "./components/projectCard";
 import ColorModeProvider, { ColorModeContext } from "./context/themeColorMode";
 import Home from "./pages/home";
 import Global from "./styles/Global";
@@ -8,7 +9,7 @@ function App() {
   return (
     <ColorModeProvider>
       <Global theme={theme} />
-      <Home />
+      <ProjectCard />
     </ColorModeProvider>
   );
 }
