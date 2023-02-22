@@ -1,6 +1,6 @@
 import AboutMe from "../../components/aboutMe";
 import NavBar from "../../components/navBar";
-import ProjectCard from "../../components/projectCard";
+import ProjectsContainer from "../../components/projectsContainer";
 import { PageContainer } from "./style";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <NavBar />
       <PageContainer>
         <AboutMe />
-        <ProjectCard />
+        <ProjectsContainer />
       </PageContainer>
     </>
   );

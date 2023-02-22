@@ -13,7 +13,7 @@ const NavBar = () => {
 
       <LinksContainer>
         <HashLink to="#section_AboutMe">Sobre Mim</HashLink>
-        <HashLink to="">Projetos</HashLink>
+        <HashLink to="#section_projects">Projetos</HashLink>
         <HashLink to="">Experiência</HashLink>
       </LinksContainer>
     </NavContainer>

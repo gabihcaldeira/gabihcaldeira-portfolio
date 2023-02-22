@@ -14,7 +14,7 @@ export const NavContainer = styled.div`
   color: ${({ theme }) => theme.colors.text.main};
 
   position: fixed;
-  z-index: 9;
+  z-index: 9999;
 
   @media (min-width: 768px) {
     height: 60px;

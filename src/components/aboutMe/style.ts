@@ -71,7 +71,8 @@ export const SectionContainer = styled.div`
   }
 
   > .section_skills {
-    padding: 15px 10px;
+    height: fit-content;
+    padding: 15px 10px 30px;
 
     > .skills_title {
       margin-bottom: 10px;
@@ -89,7 +90,7 @@ export const SectionContainer = styled.div`
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
 
       @media (min-width: 768px) {
         gap: 30px;
@@ -97,7 +98,14 @@ export const SectionContainer = styled.div`
       }
 
       > .icon_figure {
+        width: fit-content;
+
         position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
 
         :hover > .icon_caption {
           display: inline;
@@ -105,6 +113,7 @@ export const SectionContainer = styled.div`
 
         > .icon_icon {
           font-size: 35px;
+          margin: 0px auto;
 
           @media (min-width: 768px) {
             font-size: 45px;
@@ -115,6 +124,7 @@ export const SectionContainer = styled.div`
           width: max-content;
           height: fit-content;
           padding: 1px 6px;
+          margin: 0px auto;
           border-radius: 6px;
 
           background-color: ${({ theme }) => theme.colors.text.grey.light};
@@ -122,10 +132,10 @@ export const SectionContainer = styled.div`
           opacity: 0.7;
           font-size: 10px;
 
-          display: none;
           position: absolute;
-          bottom: -12px;
-          left: -2px;
+          bottom: -20px;
+
+          display: none;
         }
       }
     }
