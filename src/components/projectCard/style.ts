@@ -78,41 +78,35 @@ export const CardContainer = styled.div`
 `;
 
 export const ModalCard = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
 
-  overflow: auto;
-
   background-color: ${({ theme }) => theme.colors.background.main};
 
   > .card_content {
     width: 310px;
     padding: 25px;
-    margin: 350px 5px;
+    margin: 350px auto;
 
     border-radius: 25px;
 
     box-shadow: ${({ theme }) => theme.shadows.box};
     background-color: ${({ theme }) => theme.colors.secondary.dark};
 
-    position: absolute;
-    top: 0;
-    left: 0;
-
     @media (min-width: 768px) {
-      margin: 300px 229px;
+      margin-top: 300px;
     }
 
     @media (min-width: 1024px) {
-      margin: 200px 357px;
+      margin-top: 200px;
     }
 
-    @media (min-width: 1024px) {
-      margin: 300px 565px;
+    @media (min-width: 1440px) {
+      margin-top: 300px;
     }
 
     .card_name {
